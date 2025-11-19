@@ -11,7 +11,5 @@ if(!$conn){
     die("koneksinya gagal ndok! ". mysqli_connect_error());
 }
 
-echo "koneksi berhasil";
-mysqli_close($conn);
 
 ?>
