@@ -23,8 +23,8 @@
         <p>
           Baik kamu pecinta kuda sejati, penggemar balapan, atau cuma sekedar
           ingin tahu tentang pacuan kuda, di sini tempatnya!
-        </p class="atsbutton">
-        <a href="kuda balap.html" class="tombol">BacaSelengkapnya -></a>
+        </p><br>
+        <a href="kudabalap.php" class="tombol">BacaSelengkapnya -></a>
       </div>
       <img
         src="https://media.tenor.com/RDbJ-BwqBY0AAAAi/horse-spin.gif"/>

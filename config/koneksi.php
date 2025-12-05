@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$database = "pwd_2441919011";
+$database = "pwd_kuda";
 $username = "root";
 $password = "";
 
