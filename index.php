@@ -1,6 +1,10 @@
     <?php include 'includes/meta.php'; ?>
     <?php include 'includes/header.php'; ?>
 
+    <div class="banner">
+      <h1>SELAMAT DATANG</h1>
+    </div>
+
     <section class="teks">
       <div>
         <h2>Selamat Datang di MengKuda</h2>
@@ -19,7 +23,7 @@
         <p>
           Baik kamu pecinta kuda sejati, penggemar balapan, atau cuma sekedar
           ingin tahu tentang pacuan kuda, di sini tempatnya!
-        </p>
+        </p class="atsbutton">
         <a href="kuda balap.html" class="tombol">BacaSelengkapnya -></a>
       </div>
       <img

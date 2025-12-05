@@ -1,11 +1,14 @@
 @font-face {
   font-family: "montserrat";
-  src: url("../font/Montserrat-BoldItalic.ttf");
+  src: url("../font/Montserrat-Bold.ttf");
 }
-
 @font-face {
   font-family: "monmed";
-  src: url("../font/Montserrat-MediumItalic.ttf");
+  src: url("../font/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "monblack";
+  src: url("../font/Montserrat-Black.ttf");
 }
 
 /* Animasi */
@@ -20,10 +23,10 @@
 
 /* atas!! */
 header {
-  background: black url(gambar/kkuda.png) no-repeat right center;
+  background: black url("../gambar/kkuda.png") no-repeat right center;
   background-size: contain;
   position: relative;
-  font-family: "montserat";
+  font-family: monblack;
   padding: 15px;
   min-height: 125px;
   text-align: center;
@@ -62,7 +65,7 @@ nav a {
   border-radius: 10px;
   display: block;
   text-decoration: none;
-  font-family: "montserat";
+  font-family: montserrat;
 }
 nav a:hover {
   color: #cf0a0a;
@@ -131,18 +134,12 @@ body {
   width: 100%;
 }
 
-section {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
 /* halaman1 */
 .banner {
   /*gif*/
   width: 100%;
   height: 250px;
-  background-image: url(gambar/kudaajg.gif);
+  background-image: url(../gambar/kudaajg.gif);
   background-size: 100% 100%;
   /*font*/
   color: aliceblue;
@@ -197,8 +194,8 @@ section {
   text-decoration: none;
   background-color: #000000;
   border-radius: 5px;
-  padding: 8px 10px;
-  font-family: "montserat";
+  padding: 8px 15px;
+  font-family: montserrat;
   font-size: 0.9rem;
 }
 @media (max-width: 742px) {
@@ -410,8 +407,7 @@ section {
 }
 /* halaman4done */
 
-footer {
-  position: fixed;
+/* footer {
   display: flex;
   left: 0;
   bottom: 0;
@@ -422,4 +418,17 @@ footer {
   font-family: monmed;
   font-size: 1.9vh;
   padding: 15px;
+} */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cf0a0a;
+  color: aliceblue;
+  font-family: "monmed";
+  font-size: 1.9vh;
+  padding: 15px 0;
 }
