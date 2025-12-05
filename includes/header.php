@@ -11,10 +11,10 @@
       <input type="checkbox" id="burgir-menu"><label for="burgir-menu" class="burgir">&#9776</label>
       <ul class="navi">
         <li><input type="checkbox" id="burgir-menu"><label for="burgir-menu" class="noburgir">&times</label></li>
-        <li><a href="beranda.html">Beranda</a></li>
-        <li><a href="kuda balap.html">KudaBalap</a></li>
-        <li><a href="arena balap.html">ArenaBalap</a></li>
-        <li><a href="sejarah balap.html">CeritaBalap</a></li>
+        <li><a href="index.php">Beranda</a></li>
+        <li><a href="#">KudaBalap</a></li>
+        <li><a href="#">ArenaBalap</a></li>
+        <li><a href="#">CeritaBalap</a></li>
       </ul>
     </nav>
     <!-- navigasi done -->
