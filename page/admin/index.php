@@ -1,5 +1,6 @@
 <?php
 session_start();
+include '../../config/koneksi.php';
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../login.php");
     exit();
@@ -18,15 +19,15 @@ if (!isset($_SESSION['user_id'])) {
     <div class="sidebar">
         <h2>Adminkan Kuda</h2>
         <li><a href="index.php">Inpokan</a></li>
-        <li><a href="#">Kudakan</a></li>
-        <li><a href="#">Arenakan</a></li>
-        <li><a href="#">Ceritakan</a></li>
-        <li><a href="../login.php" class="logout">Logout</a></li>
+        <li><a href="kudakan.php">Kudakan</a></li>
+        <li><a href="arenakan.php">Arenakan</a></li>
+        <li><a href="ceritakan.php">Ceritakan</a></li>
+        <li><a href="logout.php" class="logout">Logout</a></li>
     </div>
 
-    <div>
-        <header>
-            <h1>Welkom, <?php echo $_SESSION['nama_lengkap']; ?></h1>
+    <div class="main-content">
+        <header class="inpo1">
+            <h1>Welkom, <?php echo $_SESSION['username']; ?></h1>
         </header>
         <section></section>
     </div>
