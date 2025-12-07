@@ -18,7 +18,7 @@ $kuda = mysqli_query($conn, "SELECT * FROM kuda ORDER BY id_kuda DESC");
     <title>Admin Mengkuda</title>
     <link rel="stylesheet" href="../../assets/css/adminstyle.css">
 </head>
-<body>
+<body class="body-utama">
     <div class="sidebar">
         <h2>Adminkan Kuda</h2>
         <li><a href="index.php">Inpokan</a></li>
@@ -34,7 +34,7 @@ $kuda = mysqli_query($conn, "SELECT * FROM kuda ORDER BY id_kuda DESC");
         </header>
         <section>
             <div>
-                <table>
+                <table class="tabel-kuda">
                     <tr>
                         <th>No</th>
                         <th>Nama</th>

@@ -56,38 +56,66 @@ if (isset($_POST['submit'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<h lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Kuda</title>
+    <link rel="stylesheet" href="../../assets/css/adminstyle.css">
 </head>
-<body>
 
-<h2>Edit Data Kuda</h2>
+<body class="body-utama">
+    <div class="sidebar">
+        <h2>Adminkan Kuda</h2>
+        <li><a href="index.php">Inpokan</a></li>
+        <li><a href="kudakan.php">Kudakan</a></li>
+        <li><a href="arenakan.php">Arenakan</a></li>
+        <li><a href="ceritakan.php">Ceritakan</a></li>
+        <li><a href="logout.php" class="logout">Logout</a></li>
+    </div>
 
-<form method="POST" enctype="multipart/form-data">
-    Nama kuda:<br>
-    <input type="text" name="nama_kuda" value="<?= $data['nama_kuda']; ?>"><br><br>
+    <div class="main-content-edit">
+        <header class="kudakan1-edit">
+            <a href="kudakan.php">Kembali</a>
+        </header>
+        <section>
+            <div class="edtkuda-kontener">
+            
+                <h2>Edit Data Kuda</h2>
+                
+                <form method="POST" enctype="multipart/form-data">
 
-    Tanggal lahir:<br>
-    <input type="text" name="tanggal_lahir" value="<?= $data['tanggal_lahir']; ?>"><br><br>
+                    <div class="kudaedt-grid">
 
-    Jenis kelamin:<br>
-    <select name="jenis_kelamin">
-        <option <?= $data['jenis_kelamin'] == 'Jantan' ? 'selected' : '' ?>>Jantan</option>
-        <option <?= $data['jenis_kelamin'] == 'Betina' ? 'selected' : '' ?>>Betina</option>
-    </select><br><br>
+                        <div class="kudaedt-kiri">
+                            <label> Nama kuda:</label>
+                            <input type="text" name="nama_kuda" value="<?= $data['nama_kuda']; ?>">
+                            <label>Tanggal lahir:</label>
+                            <input type="text" name="tanggal_lahir" value="<?= $data['tanggal_lahir']; ?>">
+                            <label>Jenis kelamin:</label>
+                            <select name="jenis_kelamin">
+                                <option <?= $data['jenis_kelamin'] == 'Jantan' ? 'selected' : '' ?>>Jantan</option>
+                                <option <?= $data['jenis_kelamin'] == 'Betina' ? 'selected' : '' ?>>Betina</option>
+                            </select>
+                            <label>Peternakan:</label>
+                            <input type="text" name="peternakan" value="<?= $data['peternakan']; ?>">
+                        </div>
 
-    Peternakan:<br>
-    <input type="text" name="peternakan" value="<?= $data['peternakan']; ?>"><br><br>
+                        <div class="kudaedt-kanan">
+                            <label>Foto sebelumnya:</label>
+                            <img src="../../uploads/kuda/<?= $data['foto_kuda']; ?>" class="kudaedt-foto"><br>      
+                            <label>Ganti foto (opsional): </label>
+                            <input type="file" name="foto_kuda">
+                        </div>
 
-    Foto sebelumnya:<br>
-    <img src="../../uploads/kuda/<?= $data['foto_kuda']; ?>" width="120"><br><br>
+                    </div>
+                
+                    <button type="submit" name="submit">Simpan</button>
 
-    Ganti foto (opsional):<br>
-    <input type="file" name="foto_kuda"><br><br>
-
-    <button type="submit" name="submit">Simpan</button>
-</form>
+                </form>
+            </div>
+        </section>
+    </div>
 
 </body>
 </html>

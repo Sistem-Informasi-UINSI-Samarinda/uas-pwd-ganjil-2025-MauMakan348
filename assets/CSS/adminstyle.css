@@ -1,13 +1,14 @@
-/* ===== GENERAL ===== */
-body {
+/* general */
+.body-utama {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to right, #dc5f00, #cf0a0a);
   display: flex;
 }
+/* general done */
 
-/* ===== SIDEBAR ===== */
+/* siebar */
 .sidebar {
   width: 230px;
   height: 100vh;
@@ -18,19 +19,16 @@ body {
   top: 0;
   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .sidebar h2 {
   color: #ecf0f1;
   text-align: center;
   margin-bottom: 30px;
   font-size: 22px;
 }
-
 .sidebar li {
   list-style: none;
   margin: 15px 0;
 }
-
 .sidebar a {
   text-decoration: none;
   color: #ecf0f1;
@@ -39,27 +37,25 @@ body {
   font-size: 16px;
   transition: 0.3s;
 }
-
 .sidebar a:hover {
   background-color: #7f8caa;
   border-left: 4px solid #cf0a0a;
 }
-
 .sidebar .logout {
   color: #ff7675;
 }
-
 .sidebar .logout:hover {
   background-color: #c0392b;
 }
-
 .main-content {
   margin-left: 230px;
   padding: 25px;
   width: calc(100% - 230px);
   overflow-x: hidden;
 }
+/* sidebar done */
 
+/* inpokan */
 .inpo1 {
   background: white;
   padding: 20px;
@@ -67,21 +63,302 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: calc(100% - 50px);
 }
-
 .inpo1 h1 {
   margin: 0;
   font-size: 26px;
   color: #2c3e50;
 }
-
 section {
   margin-top: 20px;
 }
+/* inpokan done */
 
 /* kudakan */
 .kudakan1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
   background: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 13px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.kudakan1 a {
+  background: #cf0a0a;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+.kudakan1 a:hover {
+  background: #ff0c0c;
+}
+.tabel-kuda {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px; /* jarak atas */
+  margin-bottom: 40px; /* jarak bawah */
+}
+.tabel-kuda th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.tabel-kuda th {
+  background: #000000;
+  color: white;
+  font-weight: bold;
+}
+.tabel-kuda tr:hover {
+  background: #ffecde;
+}
+.tabel-kuda img {
+  border-radius: 6px;
+}
+.tabel-kuda td a {
+  text-decoration: none;
+  color: #cf0a0a;
+  font-weight: bold;
+}
+.tabel-kuda td a:hover {
+  text-decoration: underline;
+}
+/* kudakan done */
+
+/* tambah kuda start*/
+.tmbhkuda_body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdacac;
+  padding: 40px 0;
+}
+.body-tmbhkuda {
+  display: flex;
+  justify-content: center;
+}
+.tmbhkuda_kontainer {
+  background: white;
+  width: 30vw;
+  padding: 20px;
+  margin: 1vh;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.tmbhkuda_kontainer h2 {
+  text-align: center;
+  color: #b30000;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  margin-top: 1vh;
+}
+.tmbhkuda_grup {
+  margin-bottom: 0;
+}
+.tmbhkuda_grup label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+.tmbhkuda_grup input,
+.tmbhkuda_grup select {
+  width: 93%;
+  padding: 12px;
+  border: 2px solid #e01313;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.tmbhkuda_kontainer input[type="text"],
+.tmbhkuda_kontainer select,
+.tmbhkuda_kontainer input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  border-color: #b30000;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.btn-kuda1 {
+  width: 100%;
+  background: #b30000;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-kuda1:hover {
+  background: #8d0000;
+}
+.btn-kuda2 {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #666;
+  color: white;
+  transition: 0.2s;
+}
+.btn-kuda2:hover {
+  background: #444;
+}
+.tmbhkuda_body .tmbhkuda-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  /* opacity: 0.5; */
+  z-index: -1;
+  pointer-events: none;
+}
+.bgtmbhkuda {
+  position: fixed;
+  top: 0;
+  left: 230px;
+  width: calc(100% - 230px);
+  height: 100vh;
+  display: flex;
+  z-index: -1;
+}
+.bgtmbhkuda img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(70%);
+}
+/* tambah kuda done*/
+
+/* edit kuda start */
+.main-content-edit {
+  margin-left: 230px;
+  padding: 25px;
+  width: calc(100% - 21%);
+  overflow-x: hidden;
+}
+.kudakan1-edit {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+  background: rgb(255, 255, 255);
+  padding: 13px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.kudakan1-edit a {
+  background: #cf0a0a;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+.kudakan1-edit a:hover {
+  background: #ff0c0c;
+}
+.edtkuda-kontener {
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.edtkuda-kontener h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+}
+.kudaedt-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.kudaedt-kiri {
+  flex: 2;
+}
+.kudaedt-kanan {
+  flex: 1;
+  text-align: center;
+}
+.kudaedt-foto {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+.edtkuda-kontener label {
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  display: inline-block;
+  margin-top: 10px;
+}
+.edtkuda-kontener input[type="text"],
+.edtkuda-kontener select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.edtkuda-kontener input[type="text"],
+.edtkuda-kontener select,
+.edtkuda-kontener input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.edtkuda-kontener input[type="file"] {
+  margin-top: 8px;
+}
+.edtkuda-kontener img {
+  margin: 10px 0 20px 0;
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+.edtkuda-kontener button {
+  width: 100%;
+  padding: 12px;
+  background: #cf0a0a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.edtkuda-kontener button:hover {
+  background: #a50808;
+}
+/* edit kuda done */

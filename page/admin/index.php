@@ -15,7 +15,7 @@ if (!isset($_SESSION['user_id'])) {
     <title>Admin Mengkuda</title>
     <link rel="stylesheet" href="../../assets/css/adminstyle.css">
 </head>
-<body>
+<body class="body-utama">
     <div class="sidebar">
         <h2>Adminkan Kuda</h2>
         <li><a href="index.php">Inpokan</a></li>
