@@ -71,6 +71,41 @@
 section {
   margin-top: 20px;
 }
+.inpo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.inpo-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.inpo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.inpo-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.inpo-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #27ae60;
+}
+.bg-inpokan1 {
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Posisikan ke kanan */
+  left: auto; /* Hilangkan left */
+  width: 300px; /* Sesuaikan ukuran */
+  z-index: 1;
+  pointer-events: none;
+}
 /* inpokan done */
 
 /* kudakan */

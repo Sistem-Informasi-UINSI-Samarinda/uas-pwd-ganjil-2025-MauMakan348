@@ -6,7 +6,7 @@
     $kuda = mysqli_query($conn, "SELECT * FROM kuda ORDER BY id_kuda DESC");
     ?>
 
-<section>
+<section class="daku-kontener">
     <div class="kuda-kontener">
         <?php while($row = mysqli_fetch_assoc($kuda)) { ?>
         <div class="kuda-card">
@@ -19,6 +19,9 @@
         </div>
     <?php } ?>
     </div>
+
+    <img src="assets/gambar/matikane.gif" class="decor02" />
 </section>
+
 
  <?php include 'includes/footer.php'; ?>

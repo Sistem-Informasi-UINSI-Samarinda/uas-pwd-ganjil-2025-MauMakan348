@@ -1,10 +1,12 @@
-    <?php include 'includes/meta.php'; ?>
-    <?php include 'includes/header.php'; ?>
+<div class="bg-index">
 
-    <div class="banner">
+  <?php include 'includes/meta.php'; ?>
+  <?php include 'includes/header.php'; ?>
+  
+  <div class="banner">
       <h1>SELAMAT DATANG</h1>
     </div>
-
+    
     <section class="teks">
       <div>
         <h2>Selamat Datang di MengKuda</h2>
@@ -27,7 +29,10 @@
         <a href="kudabalap.php" class="tombol">BacaSelengkapnya -></a>
       </div>
       <img
-        src="https://media.tenor.com/RDbJ-BwqBY0AAAAi/horse-spin.gif"/>
+      src="https://media.tenor.com/RDbJ-BwqBY0AAAAi/horse-spin.gif"/>
     </section>
-
- <?php include 'includes/footer.php'; ?>
+    
+    <img src="assets/gambar/kuda gold real.jpg" class="decor01" />
+    
+    <?php include 'includes/footer.php'; ?>
+  </div>    

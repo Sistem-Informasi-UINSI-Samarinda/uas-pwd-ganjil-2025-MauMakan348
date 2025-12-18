@@ -4,6 +4,6 @@
         <li><a href="index.php">Inpokan</a></li>
         <li><a href="kudakan.php">Kudakan</a></li>
         <li><a href="arenakan.php">Arenakan</a></li>
-        <li><a href="ceritakan.php">Ceritakan</a></li>
+        <li><a href="sejarahkan.php">Sejarahkan</a></li>
         <li><a href="logout.php" class="logout">Logout</a></li>
     </div>

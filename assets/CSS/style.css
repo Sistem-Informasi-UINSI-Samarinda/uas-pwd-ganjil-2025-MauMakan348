@@ -153,6 +153,9 @@ body {
 }
 /* backgroun */
 .beranda01 {
+  background-color: white;
+}
+.bg-index {
   background-color: #dc5f0075;
 }
 .decor01 {
@@ -165,6 +168,16 @@ body {
   pointer-events: none;
   border-radius: 30px;
   animation: muter 60s infinite linear;
+}
+.decor02 {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 30px;
 }
 /* backgroundone */
 .teks {
@@ -263,6 +276,42 @@ body {
 /* halaman2done */
 
 /*halaman3*/
+.daf-arena {
+  display: grid;
+  padding: 40px 60px;
+  justify-content: center;
+  gap: 30px;
+}
+.daf-arena-1 {
+  background: #cf0a0a;
+  border-radius: 10px;
+  color: aliceblue;
+  font-family: monmed;
+  font-size: 1rem;
+  width: 80vw;
+}
+.daf-arena-1 img {
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.daf-arena-1 h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.daf-arena-1 p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-indent: 25px;
+  padding: 0px 15px;
+  text-align: justify;
+}
+
+/* sebelum */
 .arena-kontener {
   display: grid;
   padding: 40px 60px;
@@ -348,6 +397,48 @@ body {
   align-items: center;
   justify-content: center;
 }
+.daf-sejarah-1 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  font-family: monmed;
+}
+.daf-sejarah-2 {
+  background-color: #dc5f00;
+  border-radius: 10px;
+  color: #eeeeee;
+  padding: 20px;
+  width: 60%;
+}
+.daf-sejarah-2 h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.daf-sejarah-2 p {
+  margin-top: 0;
+  margin-bottom: 1px;
+  text-align: justify;
+}
+.daf-sejarah-img {
+  background-color: #dc5f00;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  width: 25%;
+}
+.daf-sejarah-img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* yg lama */
 .sjrh-kontener {
   display: flex;
   align-items: start;

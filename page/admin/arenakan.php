@@ -34,7 +34,7 @@ $arena = mysqli_query($conn, "select * from arena order by id_arena desc");
                         <td><?= $no++ ?></td>
                         <td><?= $row['nama_arena']; ?></td>
                         <td><img src="../../uploads/arena/<?= $row['foto_arena']; ?>" width="80"></td>
-                        <td><?= substr($row['deskripsi_arena'], 0, 100); ?>...</td>
+                        <td style="max-width: 360px;" ><?= substr($row['deskripsi_arena'], 0, 100); ?>...</td>
                         <td>
                             <a href="arena_edit.php?id=<?= $row['id_arena'];?>">Edit</a> |
                             <a href="arena_hapus.php?id=<?= $row['id_arena'];?>" onclick="return confirm('hapus arena ini?')">Hapus</a> 
